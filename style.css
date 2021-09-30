@@ -163,7 +163,7 @@ label {
 
 input[type="submit"] {
   background-color: rgb(165, 219, 111);
-  width: 80%;
+  width: 50%;
   justify-content: right;
   /* object-position: left;  THIS AIN'T WORKING FOR ME*/
 }
