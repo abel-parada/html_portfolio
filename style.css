@@ -28,7 +28,8 @@ h3 {
 
 header {
   background: url("https://images7.alphacoders.com/430/430888.jpg") no-repeat
-    fixed center center/cover;
+    fixed center 100px / cover;
+  background-color: black;
 }
 
 .main-nav {
@@ -36,7 +37,7 @@ header {
   justify-content: space-between;
   align-items: center;
   color: beige;
-  padding: 50px 0;
+  padding: 20px 0;
   position: sticky;
   top: 0;
   width: 100%;
