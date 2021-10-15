@@ -1,16 +1,7 @@
-let header = document.querySelector(".main-nav");
+'use strict';
 
-window.onscroll = function () {
-  scrollFunction();
-};
+document.getElementById('button').addEventListener('click', (e) => {
+    e.preventDefault();
 
-const scrollFunction = () => {
-  if (
-    document.body.scrollTop > 100 ||
-    document.documentElement.scrollTop > 100
-  ) {
-    header.classList.add("bg");
-  } else {
-    header.classList.remove("bg");
-  }
-};
+    document.documentElement.scrollTop = 0;
+  });

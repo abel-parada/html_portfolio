@@ -4,6 +4,10 @@
   box-sizing: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Nunito Sans", sans-serif;
 }
@@ -18,7 +22,7 @@ h3 {
 
 .container {
   max-width: 1000px;
-  margin: 0 auto;
+  margin: -50px auto;
   padding: 50px 0;
 }
 
@@ -37,6 +41,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 2;
+  background-color: black;
 }
 
 /* This gets rid of the dots in the list */
@@ -46,6 +51,13 @@ nav ul {
 
 nav ul li {
   display: inline-block;
+  margin: 0px 20px;
+}
+
+nav ul li:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  color: beige;
 }
 
 nav ul li a {
@@ -144,6 +156,10 @@ nav ul li a {
   text-decoration: underline;
 }
 
+#skills {
+  margin-bottom: 50px;
+}
+
 footer {
   background-color: black;
   text-align: center;
@@ -163,9 +179,17 @@ label {
 
 input[type="submit"] {
   background-color: rgb(165, 219, 111);
-  width: 50%;
+  width: 25%;
   justify-content: right;
-  /* object-position: left;  THIS AIN'T WORKING FOR ME*/
+  font-size: larger;
+  /* object-position: right;  THIS AIN'T WORKING FOR ME*/
+}
+
+input[type="submit"]:hover {
+  transform: scale(1.1);
+  background-color: coral;
+  transition: all 2s;
+  cursor: pointer;
 }
 
 input,
@@ -222,4 +246,50 @@ p {
     box-shadow: 0 0 5px grey;
     margin: 20px;
   }
+}
+
+#button {
+  display: block;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  border: solid beige 1px;
+  outline: none;
+  background-color: black;
+  color: white;
+  padding: 0px 25px;
+  border-radius: 5px;
+  font-size: 25px;
+}
+
+#button:hover {
+  transform: scale(1.1);
+  background-color: coral;
+  transition: all 0.25s;
+  cursor: pointer;
+}
+
+.grid-container {
+  height: auto;
+  width: 100%;
+  background-color: white(103, 185, 172);
+  display: grid;
+  margin: 50px auto;
+  grid-gap: 20px;
+  grid-template-areas:
+    "grid-item grid-item grid-item"
+    "grid-item grid-item grid-item"
+    "grid-item grid-item grid-item";
+}
+
+.grid-item img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+p {
+  padding: 25px 0;
+  margin-left: 5px;
 }
